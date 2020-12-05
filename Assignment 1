@@ -1,0 +1,19 @@
+# Answer for Q1
+
+m=[]
+for i in range(2000,3200):
+    if i%7==0 and i%5!=0:
+        m.append(i)
+print(m)
+
+
+#Answer for Q2
+a=input('first name ')
+b=input('last name ')
+print(b[::-1],' ',a)
+
+#Answer for Q3
+
+r=int(input('type the radius of sphere'))
+v=4/3*22/7*r**3
+print(v)
