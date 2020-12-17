@@ -1,0 +1,24 @@
+##Write a function to compute 5/0 and use try/except to catch the exceptions.
+
+##solution(we can give input a=5 and b=0)
+
+def division():
+    try:
+        a=int(input("a="))
+        b=int(input("b="))
+        c=a/b
+        print(c)
+    except:
+        print('this is not divisible')
+        
+ 
+##Implement a Python program to generate all sentences where subject is in
+["Americans", "Indians"] and verb is in ["Play", "watch"] and the object is in
+["Baseball","cricket"].
+Hint: Subject,Verb and Object should be declared in the program as shown below.
+subjects=["Americans ","Indians"]
+verbs=["play","watch"]
+objects=["Baseball","Cricket"]
+
+
+        
