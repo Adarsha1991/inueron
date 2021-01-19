@@ -1,0 +1,36 @@
+##Write a function so that the columns of the output matrix are powers of the input vector.
+The order of the powers is determined by the increasing boolean argument. Specifically, when
+increasing is False, the i-th output column is the input vector raised element-wise to the power
+of N - i - 1.
+
+HINT: Such a matrix with a geometric progression in each row is named for Alexandre-
+Theophile Vandermonde.
+
+##Solution
+
+import numpy as np
+#creating an array
+array=np.array([1,2,3,4,5,6])
+array
+
+# using vander function
+b=np.vander(array,increasing=False)
+b
+
+
+
+#Question: Write a function to find moving average in an array over a window:
+#Test it over [3, 5, 7, 2, 8, 10, 11, 65, 72, 81, 99, 100, 150] and window of 3.
+
+
+#Solution
+# Here i have given for user option for moving average and given 3 as input
+
+import numpy as np
+def moving_average(a, n=int(input())) :
+    array = np.cumsum(a, dtype=float)
+    array[n:] = array[n:] - array[:-n]
+    return array[n - 1:] / n
+a = [3, 5, 7, 2, 8, 10, 11, 65, 72, 81, 99, 100, 150]
+print('moving average of n is', n)
+print(moving_average(a))
